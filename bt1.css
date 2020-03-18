@@ -66,7 +66,7 @@
 }
 
 .card {
-    margin: 10px;
+    margin: 20px;
 }
 
 .time, .views {
@@ -76,6 +76,7 @@
 
 .video-thumbnail img {
     width: 100%;
+    height: auto;
 }
 
 .card a {
@@ -91,10 +92,10 @@
     font-size: small;
 }
 
-.video-title h3, a {
+.video-title h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 40px;
+    height: 45px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -103,21 +104,22 @@
 #mid-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin-top: 8px;
 }
 
-@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
     #mid-content {
         grid-template-columns: auto auto auto;
     }
 }
 
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
     #mid-content {
         grid-template-columns: auto auto;
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 750px) {
     #content-wrapper {
         grid-template-columns: 100%;
     }
