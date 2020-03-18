@@ -65,23 +65,39 @@
     grid-template-columns: 200px auto 200px;
 }
 
+.card {
+    margin: 10px;
+}
+
 .time, .views {
     display: inline-block;
+    font-size: 0.7em;
 }
 
 .video-thumbnail img {
     width: 100%;
 }
 
-.video-title a{
+.card a {
     color: black;
-    font-weight: bolder;
-    font-size: larger;
     text-decoration: none;
 }
 
-.card {
-    margin: 10px;
+.video-title {
+    font-weight: bolder;
+}
+
+.channel-name {
+    font-size: small;
+}
+
+.video-title h3, a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 #mid-content {
@@ -89,19 +105,19 @@
     grid-template-columns: auto auto auto auto;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
     #mid-content {
         grid-template-columns: auto auto auto;
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 950px) {
+@media only screen and (min-width: 780px) and (max-width: 1100px) {
     #mid-content {
         grid-template-columns: auto auto;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 780px) {
     #content-wrapper {
         grid-template-columns: 100%;
     }
