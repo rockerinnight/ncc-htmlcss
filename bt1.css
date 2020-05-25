@@ -69,10 +69,6 @@
     margin: 20px;
 }
 
-.time, .views {
-    font-size: 0.7em;
-}
-
 .video-thumbnail img {
     max-width: 400px;
 }
@@ -96,6 +92,7 @@
 }
 
 .views, .time {
+    font-size: 0.7em;
     display: -webkit-inline-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
